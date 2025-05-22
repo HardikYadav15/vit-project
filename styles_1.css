@@ -9,9 +9,14 @@
 
 html{
     box-sizing: border-box;
+    font-size: 62.5%;
+    
+    
+    
 }
 html,body{
     height: 100%;
+    
 }
 *,*::before,*::after{
     box-sizing: inherit;
@@ -25,6 +30,9 @@ html,body{
 
 body{
     background-color: #f6f6f6;
+    font-size: 1.5rem;
+    
+    
 }
 a{
     color:#3c8453;
@@ -38,7 +46,22 @@ a:hover{
     color:#f6f6f6;
     text-decoration: none;
 }
+h1,h2,h3{
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
+}
+h1{
+    font-size: 7rem;
+}
 
+h2{
+    font-size: 3.6rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
 /* Index */
 .home{
     background: url(placeholder-images/bg-home-office-studio.jpg);
