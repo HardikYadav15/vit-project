@@ -185,7 +185,7 @@ footer a:hover{
 @media(min-width:650px) and (max-width:859px){
     .project-wrapper{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
         column-gap: 20px;
     }
     .project-item img{
@@ -201,5 +201,19 @@ footer a:hover{
 @media (max-width:1250px) {
     .download-link{
         position: absolute;
+    }
+}
+@media (min-width:860px){
+    footer{
+        display:flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:850px){
+    footer{
+        text-align: center;
+        padding: 10px;
     }
 }
