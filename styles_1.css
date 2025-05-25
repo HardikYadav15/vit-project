@@ -31,6 +31,7 @@ html,body{
 body{
     background-color: #f6f6f6;
     font-size: 1.5rem;
+    line-height: 1.4;
     
     
 }
@@ -45,6 +46,13 @@ a:hover{
     background-color: #3c8453;
     color:#f6f6f6;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    padding: 5px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 4px;
+    letter-spacing: .1em;
 }
 h1,h2,h3{
     font-family: "Caveat", cursive;
@@ -53,6 +61,7 @@ h1,h2,h3{
 }
 h1{
     font-size: 7rem;
+    line-height: 0.85;
 }
 
 h2{
@@ -60,7 +69,7 @@ h2{
 }
 
 h3{
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 /* Index */
 .home{
@@ -100,6 +109,7 @@ h3{
 }
 
 .download-link{
+    font-size: 1.5rem;
     position:fixed;
     top:5px;
     left: 5px;
@@ -109,12 +119,7 @@ h3{
 
 
 /* Projects */
-.project-item img{
-    float: left;
-    width:200px;
-    height:200px;
-    margin-right: 20px;
-}
+
 .project-item{
     display: flow-root;
     margin-block: 30px;
@@ -124,6 +129,9 @@ h3{
 /* work experience*/
 
 /*Education*/
+.education-item{
+    margin: 0;
+}
 
 
 /* Footer */
@@ -159,4 +167,39 @@ footer a:hover{
 
 .socials img:hover{
     opacity: 50%;
+}
+
+
+@media (min-width:860px) {
+    .project-item{
+        display: flow-root;
+    }
+    .project-item img{
+        float: left;
+        width:200px;
+        height:200px;
+        margin-right: 20px;
+    }
+}
+
+@media(min-width:650px) and (max-width:859px){
+    .project-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .project-item img{
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .project-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:1250px) {
+    .download-link{
+        position: absolute;
+    }
 }
